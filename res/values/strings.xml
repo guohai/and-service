@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndServiceActivity!</string>
+    <string name="app_name">Android Service Demo</string>
+    <string name="start">"startService"</string>
+    <string name="stop">stopService</string>
+    <string name="bind">bindService</string>
+    <string name="unbind">unbindService</string>
+
+</resources>
