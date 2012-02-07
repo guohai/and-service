@@ -20,6 +20,10 @@ public class AndServiceActivity extends Activity implements OnClickListener {
 	private Button stopButton;
 	private Button bindButton;
 	private Button unbindButton;
+
+	private Button startIntentButton;
+	private Button stopIntentButton;
+
 	private Context mContext;
 
 	private ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -47,10 +51,16 @@ public class AndServiceActivity extends Activity implements OnClickListener {
 		bindButton = (Button) findViewById(R.id.bindservice);
 		unbindButton = (Button) findViewById(R.id.unbindservice);
 
+		startIntentButton = (Button) findViewById(R.id.startintentservice);
+		stopIntentButton = (Button) findViewById(R.id.stopintentservice);
+
 		startButton.setOnClickListener(this);
 		stopButton.setOnClickListener(this);
 		bindButton.setOnClickListener(this);
 		unbindButton.setOnClickListener(this);
+
+		startIntentButton.setOnClickListener(this);
+		stopIntentButton.setOnClickListener(this);
 	}
 
 	public void onClick(View v) {
@@ -66,8 +76,16 @@ public class AndServiceActivity extends Activity implements OnClickListener {
 			Intent i = new Intent();
 			i.setClass(AndServiceActivity.this, FakeService.class);
 			mContext.bindService(i, mServiceConnection, BIND_AUTO_CREATE);
-		} else {
+		} else if (v == unbindButton) {
 			mContext.unbindService(mServiceConnection);
+		} else if (v == startIntentButton) {
+			Intent i = new Intent();
+			i.setClass(AndServiceActivity.this, FakeIntentService.class);
+			mContext.startService(i);
+		} else if (v == stopIntentButton) {
+			Intent i = new Intent();
+			i.setClass(AndServiceActivity.this, FakeIntentService.class);
+			mContext.stopService(i);
 		}
 	}
 }

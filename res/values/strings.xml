@@ -7,5 +7,7 @@
     <string name="stop">stopService</string>
     <string name="bind">bindService</string>
     <string name="unbind">unbindService</string>
+    <string name="startintent">"startIntentService"</string>
+    <string name="stopintent">stopIntentService</string>
 
 </resources>

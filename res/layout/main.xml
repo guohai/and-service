@@ -34,4 +34,16 @@
         android:layout_height="wrap_content"
         android:text="@string/unbind" />
 
+    <Button
+        android:id="@+id/startintentservice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startintent" />
+
+    <Button
+        android:id="@+id/stopintentservice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stopintent" />
+
 </LinearLayout>

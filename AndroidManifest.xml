@@ -21,6 +21,8 @@
 
         <service android:name=".FakeService" >
         </service>
+        <service android:name=".FakeIntentService" >
+        </service>
     </application>
 
 </manifest>

@@ -15,7 +15,9 @@ public final class R {
     }
     public static final class id {
         public static final int bindservice=0x7f050003;
+        public static final int startintentservice=0x7f050005;
         public static final int startservice=0x7f050001;
+        public static final int stopintentservice=0x7f050006;
         public static final int stopservice=0x7f050002;
         public static final int text=0x7f050000;
         public static final int unbindservice=0x7f050004;
@@ -28,7 +30,9 @@ public final class R {
         public static final int bind=0x7f040004;
         public static final int hello=0x7f040000;
         public static final int start=0x7f040002;
+        public static final int startintent=0x7f040006;
         public static final int stop=0x7f040003;
+        public static final int stopintent=0x7f040007;
         public static final int unbind=0x7f040005;
     }
 }
