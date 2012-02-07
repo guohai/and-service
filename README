@@ -1,3 +1,6 @@
 Android Service Demo
 src code from http://blog.csdn.net/android_tutor/article/details/5789203
 
+http://developer.android.com/reference/android/app/IntentService.html
+http://developer.android.com/guide/topics/fundamentals/services.html
+http://developer.android.com/guide/practices/design/responsiveness.html
